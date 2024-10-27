@@ -40,3 +40,34 @@ const myn2 = myArr.splice(1, 3) //prints 1,2,3
 console.log(myn2);
 console.log("C ", myArr);//original array gets modified after splicing 1,2,3
 console.log(myn2);
+
+const marvel_heros = ['thor','ironman','spiderman']
+const dc_heros = ['superman','flash','batman']
+//marvel_heros.push(dc_heros)//gives array within another array
+//console.log(marvel_heros)
+//console.log(marvel_heros[3][1])
+//not a very good way
+
+const all_heros = marvel_heros.concat(dc_heros)
+console.log(all_heros)
+
+//spread
+const all_new_heros =[...marvel_heros, ...dc_heros]
+console.log(all_new_heros)
+
+const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
+const real_another_array = another_array.flat(4)
+//returns a new array with all suba arrays elements concantenated into it recursively upto specified depth
+console.log(real_another_array)
+
+console.log(Array.isArray("Mehak"))
+console.log(Array.of("mehak")) // converts mehak as whole into idex 0 of array
+console.log(Array.from("mehak"))//converts each char of mehak into array
+console.log(Array.from({name:"mehak"}))
+//cannot convert obj into array directly ,will give empty array as of now
+//we need to mention that whether we want array of all keys or array of all values
+
+let score1=100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1,score2,score3))
