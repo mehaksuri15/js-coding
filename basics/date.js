@@ -26,4 +26,15 @@ console.log(myCreatedDate3.toLocaleString())
 let myTimeStamp = Date.now()
 console.log(myTimeStamp)
 console.log(myCreatedDate.getTime())
+//jo date given h usse leke abhi tak ke ms batayega
 console.log(Date.now())
+
+let newDate = new Date()
+console.log(newDate.getMonth()) //month starts from 0
+console.log(newDate.getDate())
+console.log(newDate.getDay())
+
+newDate.toLocaleString('default',{
+    weekday:"long"})
+   
+console.log(newDate)
