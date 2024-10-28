@@ -104,3 +104,12 @@ console.log(Object.entries(tinderUser));
 
 //to check if value exists or not
 console.log(tinderUser.hasOwnProperty('name'));
+
+// ***********DESTRUCTURING OF OBJECT ***************
+const course = {
+    coursename : "js in hindi ",
+    price : "999",
+    courseInstructor : "hitesh"
+
+}
+course.courseInstructor()
