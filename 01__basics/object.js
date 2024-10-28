@@ -109,7 +109,20 @@ console.log(tinderUser.hasOwnProperty('name'));
 const course = {
     coursename : "js in hindi ",
     price : "999",
-    courseInstructor : "hitesh"
+    courseInstructor : "mehak"
 
 }
-course.courseInstructor()
+console.log(course.courseInstructor);
+
+// way to destructure object and access
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+//totypedef courseInstructor
+const {courseInstructor :Instructor} = course
+console.log(Instructor);
+
+//JSON : javascript object notation
+//all the API are in JSON format
+//API is used to fetch data from user
+//zarrori ni h ki object ke through hi mile,but arrays ke through bhi mil sak ti h
