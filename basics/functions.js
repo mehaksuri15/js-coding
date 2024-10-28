@@ -41,7 +41,32 @@ console.log (loginUserMessage()) //it will give undefined
 //rest oeperator (...) 
 //note :issi ko dot operator bhi bolte h
 function calculateCartPrice(...num){
-    return num1
+    return num
 }
 console.log(calculateCartPrice(200,400,500))
 //it gives array of [200,400,500]
+
+
+//imp thing to note
+function calculateCartPrice(val1,val2,...num){
+    return num
+}
+console.log(calculateCartPrice(200,400,500,2000))
+// val1 =200,val2=400,...num=[500,2000] 
+
+const user = {
+    username : "mehak",
+    price : 199
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+handleObject(user)
+
+const myNewArray = [200,400,100,600]
+function returnSecondValue(getArray){
+    return getArray[1] //don't write myNewArray
+    //hume yeh dhyan rakhna h ki humare paas kya argument aara h
+}
+console.log(returnSecondValue(myNewArray));
+//or console.log(returnSecondValue([200,400,100,600]))
