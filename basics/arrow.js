@@ -1,3 +1,4 @@
+//this keyword ->tells about current context
 const user ={
     username : "mehak",
     price : "999",
@@ -13,9 +14,14 @@ const user ={
 user.welcomeMessage() //user is name of object
 user.username = "sam"
 user.welcomeMessage()
-console.log(this) //gives curly braces which are empty kyunki woh node ke andar print kara h
+console.log(this) //gives empty object kyunki woh node ke andar print kara h
 
- //when we will write this statement in bowser the gloabal object is window and also it will give undefined
+ //when we will write this statement in bowser the global object is window and also it will give undefined
+
+ function chai(){
+    console.log(this);
+ }
+ chai()
 
  const chai = () =>{
     let username ="mehak"
