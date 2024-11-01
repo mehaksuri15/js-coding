@@ -16,7 +16,7 @@
     <h1 id="title" class = "heading">DOM learning js</h1>
     <h1 id="title" class = "heading">DOM learning js</h1>
     <h1 id="title" class = "heading">DOM learning js</h1 >
-    <h2 id ='title3 class = 'heading3' >students</h2>
+    <h2 id="title3" class = "heading3" >students</h2>
     <div class ="bg-black">
         
         <p id ="title1">Lorem ipsum dolor sit amet.</p>
@@ -27,12 +27,7 @@
         
         document.getElementsByTagName("h1")[1].innerHTML = "mehak"
 
-        const headings = document.getElementsByClassName("heading3");
-
-        for (let i = 0; i < headings.length; i++) {
-         headings[i].innerHTML = "suri";
-        }
-        
+        document.getElementsByClassName("heading3")[0].innerHTML = "suri"
 
     </script>
     <!-- getElementById used to access the html element-->
