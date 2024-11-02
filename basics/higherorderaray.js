@@ -32,15 +32,22 @@ for (const greet of greetings){
 //     console.log (key , ':-', value)
 // }
 
+ 
 //applying for of loop on my object
-const myObject = {
-    'game1' : 'NFS' , 
-    'game2' : 'Spiderman'
-}
+// const myObject = {
+//     'game1' : 'NFS' , 
+//     'game2' : 'Spiderman'
+// }
+// for( const key of myObject){
+//     console.log(key)
+// }
+// The for...of loop cannot be used to iterate over an object.
 // this is not the correct syntax for using forof loop in objects
 // for(const [key,value] of myObject){
 //     console.log(key,':-',value);
 // }
+
+
 //for in loops are used for objects
 
 const myObject2 = {
@@ -80,5 +87,10 @@ for (const key in map){
 } //it won't print anything as maps are not iterable
 
 
+//for each requires call back function
+//we write function as function (name){}
+const coding = ["js","ruby","java","python","cpp"]
+coding.forEach( function (item){
+    console.log(item)
 
-coding.forEach()  
+})
