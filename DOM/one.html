@@ -17,9 +17,19 @@
     <h1 id="title" class = "heading">DOM learning js</h1>
     <h1 id="title" class = "heading">DOM learning js</h1 >
     <h2 id="title3" class = "heading3" >students</h2>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
     <div class ="bg-black">
         
         <p id ="title1">Lorem ipsum dolor sit amet.</p>
+        <p id ="title4">Lorem ipsum dolor sit amet.</p>
+        <p class="fruits ">Apple</p>
+        <p class="fruits ">Banana</p>
+        <p class="fruits ">Orange</p>
+        
         
     </div> 
     <script> 
@@ -29,9 +39,22 @@
 
         document.getElementsByClassName("heading3")[0].innerHTML = "suri"
 
+        const varname = document.getElementById('title4')
+        varname.style.color = 'red'
+
+        const element= document.querySelector ('h1')
+        element.style.color = 'yellow'
+
+        const turnGreen = document.querySelector('li')
+        turnGreen.style.color = 'blue'
+
+        const fruits = document.querySelectorAll(".fruits")
+        fruits[1].style.color = 'orange'
     </script>
     <!-- getElementById used to access the html element-->
     <!-- inner HTML is used to get or replace the text of html elements -->
      <!--getElementsByTagName finds the element by tagname and 0 likhne pe 1st h1 tag chnage hoga 1 pe 2nd and sooo on  -->
+     <!-- querySelector gives first element or returns null if it doesnt exist -->
+      <!-- querySelectorAll gives a node list-->
 </body>
 </html> 
